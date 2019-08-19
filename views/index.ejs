@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Home </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <br/>
+<ul>
+  <li> <b> <%= title %></b> </li>
+  <li> <b> <%= title %></b> </li>
+  <li> <i> <%= title %> </i> </li>
+  <li> <i> <%= title %> </i> </li>
+</ul>
+
+
+<ul>
+<% model.forEach(function(custon){ %>
+   <li> <b> <%=custon.nome %> <%= custon.idade%> <b> </li>
+<% }) %>
+  
+</ul>
+
+
+    <h2><p>Welcome to <%= title %></p> </h2>
+  </body>
+</html>
+
+
